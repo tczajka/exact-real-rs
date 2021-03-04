@@ -1,0 +1,21 @@
+[package]
+name = "exact-real"
+version = "0.0.0"
+authors = ["Tomek Czajka <tczajka@gmail.com>"]
+edition = "2018"
+description = "Inifinite precision real numbers"
+keywords = ["bignum", "mathematics"]
+categories = ["mathematics", "no-std"]
+license = "MIT"
+repository = "https://github.com/tczajka/exact-real-rs"
+homepage = "https://github.com/tczajka/exact-real-rs"
+readme = "README.md"
+
+[dependencies]
+ibig = { version = "0.1", default-features = false }
+
+[features]
+default = ["std"]
+
+# Interface with the std library.
+std = []
